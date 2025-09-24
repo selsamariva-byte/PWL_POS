@@ -15,8 +15,7 @@ return new class extends Migration
             $table->id('supplier_id');
             $table->string('supplier_kode', 10)->unique();
             $table->string('supplier_nama', 100);
-            $table->string('supplier_alamat', 200);
-            $table->string('supplier_telp', 15);
+            $table->string('supplier_alamat', 255);
             $table->timestamps();
         });
     }
@@ -26,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('m_supplier');
     }
 };
