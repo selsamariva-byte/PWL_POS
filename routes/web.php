@@ -11,6 +11,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('level', levelcontroller::class);
-Route::get('/kategori', [kategoricontroller::class, 'index']);
-Route::get('/User', [UserController::class, 'index']);
+Route::get('/level', [LevelController::class, 'index']);
+Route::get('/kategori', [KategoriController::class, 'index']);
+Route::get('/user', [UserController::class, 'index']);
