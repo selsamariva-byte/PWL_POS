@@ -21,9 +21,9 @@ class m_BarangSeeder extends Seeder
                 'supplier_id' => 1,
                 'barang_kode' => 'BRG001',
                 'barang_nama' => 'Indomie Goreng',
-                'barang_harga_beli' => 2500,
-                'barang_harga_jual' => 3000,
-                'barang_stok' => 100
+                'harga_beli' => 2500,
+                'harga_jual' => 3000,
+
             ],
             [
                 'barang_id' => 2,
@@ -31,9 +31,9 @@ class m_BarangSeeder extends Seeder
                 'supplier_id' => 2,
                 'barang_kode' => 'BRG002',
                 'barang_nama' => 'Teh Botol Sosro',
-                'barang_harga_beli' => 4000,
-                'barang_harga_jual' => 5000,
-                'barang_stok' => 150
+                'harga_beli' => 4000,
+                'harga_jual' => 5000,
+
             ],
             [
                 'barang_id' => 3,
@@ -41,9 +41,9 @@ class m_BarangSeeder extends Seeder
                 'supplier_id' => 3,
                 'barang_kode' => 'BRG003',
                 'barang_nama' => 'Chitato',
-                'barang_harga_beli' => 6000,
-                'barang_harga_jual' => 7500,
-                'barang_stok' => 200
+                'harga_beli' => 6000,
+                'harga_jual' => 7500,
+
             ],
             [
                 'barang_id' => 4,
@@ -51,9 +51,9 @@ class m_BarangSeeder extends Seeder
                 'supplier_id' => 1,
                 'barang_kode' => 'BRG004',
                 'barang_nama' => 'Kaos Polos',
-                'barang_harga_beli' => 20000,
-                'barang_harga_jual' => 25000,
-                'barang_stok' => 50
+                'harga_beli' => 20000,
+                'harga_jual' => 25000,
+
             ],
             [
                 'barang_id' => 5,
@@ -61,9 +61,9 @@ class m_BarangSeeder extends Seeder
                 'supplier_id' => 2,
                 'barang_kode' => 'BRG005',
                 'barang_nama' => 'Pulpen',
-                'barang_harga_beli' => 1500,
-                'barang_harga_jual' => 2000,
-                'barang_stok' => 300
+                'harga_beli' => 1500,
+                'harga_jual' => 2000,
+
             ],
             [
                 'barang_id' => 6,
@@ -71,9 +71,9 @@ class m_BarangSeeder extends Seeder
                 'supplier_id' => 3,
                 'barang_kode' => 'BRG006',
                 'barang_nama' => 'Biskuit',
-                'barang_harga_beli' => 5000,
-                'barang_harga_jual' => 6500,
-                'barang_stok' => 120
+                'harga_beli' => 5000,
+                'harga_jual' => 6500,
+
             ],
             [
                 'barang_id' => 7,
@@ -81,9 +81,9 @@ class m_BarangSeeder extends Seeder
                 'supplier_id' => 1,
                 'barang_kode' => 'BRG007',
                 'barang_nama' => 'Aqua 600ml',
-                'barang_harga_beli' => 3000,
-                'barang_harga_jual' => 4000,
-                'barang_stok' => 180
+                'harga_beli' => 3000,
+                'harga_jual' => 4000,
+
             ],
             [
                 'barang_id' => 8,
@@ -91,9 +91,9 @@ class m_BarangSeeder extends Seeder
                 'supplier_id' => 2,
                 'barang_kode' => 'BRG008',
                 'barang_nama' => 'Taro',
-                'barang_harga_beli' => 7000,
-                'barang_harga_jual' => 8500,
-                'barang_stok' => 90
+                'harga_beli' => 7000,
+                'harga_jual' => 8500,
+
             ],
             [
                 'barang_id' => 9,
@@ -101,9 +101,9 @@ class m_BarangSeeder extends Seeder
                 'supplier_id' => 3,
                 'barang_kode' => 'BRG009',
                 'barang_nama' => 'Kemeja',
-                'barang_harga_beli' => 50000,
-                'barang_harga_jual' => 60000,
-                'barang_stok' => 40
+                'harga_beli' => 50000,
+                'harga_jual' => 60000,
+
             ],
             [
                 'barang_id' => 10,
@@ -111,9 +111,9 @@ class m_BarangSeeder extends Seeder
                 'supplier_id' => 1,
                 'barang_kode' => 'BRG010',
                 'barang_nama' => 'Buku Tulis',
-                'barang_harga_beli' => 4000,
-                'barang_harga_jual' => 5000,
-                'barang_stok' => 250
+                'harga_beli' => 4000,
+                'harga_jual' => 5000,
+
             ],
             [
                 'barang_id' => 11,
@@ -121,9 +121,9 @@ class m_BarangSeeder extends Seeder
                 'supplier_id' => 2,
                 'barang_kode' => 'BRG011',
                 'barang_nama' => 'Sari Roti',
-                'barang_harga_beli' => 12000,
-                'barang_harga_jual' => 15000,
-                'barang_stok' => 80
+                'harga_beli' => 12000,
+                'harga_jual' => 15000,
+
             ],
             [
                 'barang_id' => 12,
@@ -131,9 +131,9 @@ class m_BarangSeeder extends Seeder
                 'supplier_id' => 3,
                 'barang_kode' => 'BRG012',
                 'barang_nama' => 'Coca Cola',
-                'barang_harga_beli' => 8000,
-                'barang_harga_jual' => 10000,
-                'barang_stok' => 130
+                'harga_beli' => 8000,
+                'harga_jual' => 10000,
+
             ],
             [
                 'barang_id' => 13,
@@ -141,9 +141,9 @@ class m_BarangSeeder extends Seeder
                 'supplier_id' => 1,
                 'barang_kode' => 'BRG013',
                 'barang_nama' => 'Oreo',
-                'barang_harga_beli' => 9000,
-                'barang_harga_jual' => 11000,
-                'barang_stok' => 110
+                'harga_beli' => 9000,
+                'harga_jual' => 11000,
+
             ],
             [
                 'barang_id' => 14,
@@ -151,9 +151,9 @@ class m_BarangSeeder extends Seeder
                 'supplier_id' => 2,
                 'barang_kode' => 'BRG014',
                 'barang_nama' => 'Jaket',
-                'barang_harga_beli' => 80000,
-                'barang_harga_jual' => 100000,
-                'barang_stok' => 30
+                'harga_beli' => 80000,
+                'harga_jual' => 100000,
+
             ],
             [
                 'barang_id' => 15,
@@ -161,10 +161,9 @@ class m_BarangSeeder extends Seeder
                 'supplier_id' => 3,
                 'barang_kode' => 'BRG015',
                 'barang_nama' => 'Stapler',
-                'barang_harga_beli' => 10000,
-                'barang_harga_jual' => 12000,
-                'barang_stok' => 220
-            ],
+                'harga_beli' => 10000,
+                'harga_jual' => 12000,
+            ]
         ];
         DB::table('m_barang')->insert($data);
     }

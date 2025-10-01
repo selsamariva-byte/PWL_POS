@@ -15,275 +15,277 @@ class t_penjualan_detailSeeder extends Seeder
     {
         $data = [
             [
-                'penjualan_detail_id' => 1,
+                'detail_id' => 1,
                 'penjualan_id' => 1,
                 'barang_id' => 1,
-                'penjualan_detail_harga_jual' => 15000,
-                'penjualan_detail_jumlah' => 2,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 30000
+                'harga' => 3000,
+                'jumlah' => 2,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
-                'penjualan_detail_id' => 2,
+                'detail_id' => 2,
                 'penjualan_id' => 1,
-                'barang_id' => 3,
-                'penjualan_detail_harga_jual' => 11000,
-                'penjualan_detail_jumlah' => 1,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 11000
+                'barang_id' => 2,
+                'harga' => 5000,
+                'jumlah' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
-                'penjualan_detail_id' => 3,
+                'detail_id' => 3,
+                'penjualan_id' => 2,
+                'barang_id' => 3,
+                'harga' => 7500,
+                'jumlah' => 3,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'detail_id' => 4,
+                'penjualan_id' => 2,
+                'barang_id' => 4,
+                'harga' => 25000,
+                'jumlah' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'detail_id' => 5,
+                'penjualan_id' => 3,
+                'barang_id' => 5,
+                'harga' => 15000,
+                'jumlah' => 2,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'detail_id' => 6,
+                'penjualan_id' => 3,
+                'barang_id' => 1,
+                'harga' => 3000,
+                'jumlah' => 5,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'detail_id' => 7,
+                'penjualan_id' => 4,
+                'barang_id' => 2,
+                'harga' => 5000,
+                'jumlah' => 2,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'detail_id' => 8,
+                'penjualan_id' => 4,
+                'barang_id' => 3,
+                'harga' => 7500,
+                'jumlah' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'detail_id' => 9,
+                'penjualan_id' => 5,
+                'barang_id' => 4,
+                'harga' => 25000,
+                'jumlah' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
+
+            ],
+            [
+                'detail_id' => 10,
+                'penjualan_id' => 5,
+                'barang_id' => 5,
+                'harga' => 15000,
+                'jumlah' => 3,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'detail_id' => 11,
+                'penjualan_id' => 1,
+                'barang_id' => 1,
+                'harga' => 3000,
+                'jumlah' => 4,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'detail_id' => 12,
                 'penjualan_id' => 2,
                 'barang_id' => 2,
-                'penjualan_detail_harga_jual' => 10000,
-                'penjualan_detail_jumlah' => 3,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 30000
+                'harga' => 5000,
+                'jumlah' => 2,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
-                'penjualan_detail_id' => 4,
+                'detail_id' => 13,
                 'penjualan_id' => 3,
-                'barang_id' => 4,
-                'penjualan_detail_harga_jual' => 5000,
-                'penjualan_detail_jumlah' => 4,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 20000
-            ],
-            [
-                'penjualan_detail_id' => 5,
-                'penjualan_id' => 4,
-                'barang_id' => 5,
-                'penjualan_detail_harga_jual' => 60000,
-                'penjualan_detail_jumlah' => 2,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 120000
-            ],
-            [
-                'penjualan_detail_id' => 6,
-                'penjualan_id' => 5,
-                'barang_id' => 6,
-                'penjualan_detail_harga_jual' => 5000,
-                'penjualan_detail_jumlah' => 6,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 30000
-            ],
-            [
-                'penjualan_detail_id' => 7,
-                'penjualan_id' => 6,
-                'barang_id' => 7,
-                'penjualan_detail_harga_jual' => 15000,
-                'penjualan_detail_jumlah' => 7,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 105000
-            ],
-            [
-                'penjualan_detail_id' => 8,
-                'penjualan_id' => 7,
-                'barang_id' => 8,
-                'penjualan_detail_harga_jual' => 20000,
-                'penjualan_detail_jumlah' => 5,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 100000
-            ],
-            [
-                'penjualan_detail_id' => 9,
-                'penjualan_id' => 8,
-                'barang_id' => 9,
-                'penjualan_detail_harga_jual' => 60000,
-                'penjualan_detail_jumlah' => 3,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 180000
-            ] .
-                [
-                    'penjualan_detail_id' => 10,
-                    'penjualan_id' => 9,
-                    'barang_id' => 10,
-                    'penjualan_detail_harga_jual' => 5000,
-                    'penjualan_detail_jumlah' => 4,
-                    'penjualan_detail_diskon' => 0,
-                    'penjualan_detail_subtotal' => 20000
-                ],
-            [
-                'penjualan_detail_id' => 11,
-                'penjualan_id' => 10,
-                'barang_id' => 11,
-                'penjualan_detail_harga_jual' => 15000,
-                'penjualan_detail_jumlah' => 2,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 30000
-            ],
-            [
-                'penjualan_detail_id' => 12,
-                'penjualan_id' => 11,
-                'barang_id' => 12,
-                'penjualan_detail_harga_jual' => 10000,
-                'penjualan_detail_jumlah' => 6,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 60000
-            ],
-            [
-                'penjualan_detail_id' => 13,
-                'penjualan_id' => 12,
-                'barang_id' => 13,
-                'penjualan_detail_harga_jual' => 11000,
-                'penjualan_detail_jumlah' => 1,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 11000
-            ],
-            [
-                'penjualan_detail_id' => 14,
-                'penjualan_id' => 13,
-                'barang_id' => 14,
-                'penjualan_detail_harga_jual' => 100000,
-                'penjualan_detail_jumlah' => 3,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 300000
-            ],
-            [
-                'penjualan_detail_id' => 15,
-                'penjualan_id' => 14,
-                'barang_id' => 15,
-                'penjualan_detail_harga_jual' => 12000,
-                'penjualan_detail_jumlah' => 5,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 60
-            ],
-            [
-                'penjualan_detail_id' => 16,
-                'penjualan_id' => 15,
-                'barang_id' => 1,
-                'penjualan_detail_harga_jual' => 15000,
-                'penjualan_detail_jumlah' => 4,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 60000
-            ],
-            [
-                'penjualan_detail_id' => 17,
-                'penjualan_id' => 16,
-                'barang_id' => 2,
-                'penjualan_detail_harga_jual' => 10000,
-                'penjualan_detail_jumlah' => 3,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 30000
-            ],
-            [
-                'penjualan_detail_id' => 18,
-                'penjualan_id' => 17,
                 'barang_id' => 3,
-                'penjualan_detail_harga_jual' => 11000,
-                'penjualan_detail_jumlah' => 2,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 22000
+                'harga' => 7500,
+                'jumlah' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
-                'penjualan_detail_id' => 19,
-                'penjualan_id' => 18,
+                'detail_id' => 14,
+                'penjualan_id' => 4,
                 'barang_id' => 4,
-                'penjualan_detail_harga_jual' => 5000,
-                'penjualan_detail_jumlah' => 5,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 25000
+                'harga' => 25000,
+                'jumlah' => 2,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
-                'penjualan_detail_id' => 20,
-                'penjualan_id' => 19,
+                'detail_id' => 15,
+                'penjualan_id' => 5,
                 'barang_id' => 5,
-                'penjualan_detail_harga_jual' => 60000,
-                'penjualan_detail_jumlah' => 1,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 60000
+                'harga' => 15000,
+                'jumlah' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
-                'penjualan_detail_id' => 21,
-                'penjualan_id' => 20,
-                'barang_id' => 6,
-                'penjualan_detail_harga_jual' => 5000,
-                'penjualan_detail_jumlah' => 8,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 40000
+                'detail_id' => 16,
+                'penjualan_id' => 6,
+                'barang_id' => 1,
+                'harga' => 3000,
+                'jumlah' => 3,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
-                'penjualan_detail_id' => 22,
-                'penjualan_id' => 21,
-                'barang_id' => 7,
-                'penjualan_detail_harga_jual' => 15000,
-                'penjualan_detail_jumlah' => 2,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 30000
+                'detail_id' => 17,
+                'penjualan_id' => 7,
+                'barang_id' => 2,
+                'harga' => 5000,
+                'jumlah' => 2,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
-                'penjualan_detail_id' => 23,
-                'penjualan_id' => 22,
-                'barang_id' => 8,
-                'penjualan_detail_harga_jual' => 20000,
-                'penjualan_detail_jumlah' => 4,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 80000
+                'detail_id' => 18,
+                'penjualan_id' => 8,
+                'barang_id' => 3,
+                'harga' => 7500,
+                'jumlah' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
-                'penjualan_detail_id' => 24,
-                'penjualan_id' => 23,
-                'barang_id' => 9,
-                'penjualan_detail_harga_jual' => 60000,
-                'penjualan_detail_jumlah' => 2,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 120000
+                'detail_id' => 19,
+                'penjualan_id' => 9,
+                'barang_id' => 4,
+                'harga' => 25000,
+                'jumlah' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
-                'penjualan_detail_id' => 25,
-                'penjualan_id' => 24,
-                'barang_id' => 10,
-                'penjualan_detail_harga_jual' => 5000,
-                'penjualan_detail_jumlah' => 6,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 30000
+                'detail_id' => 20,
+                'penjualan_id' => 10,
+                'barang_id' => 5,
+                'harga' => 15000,
+                'jumlah' => 2,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
-                'penjualan_detail_id' => 26,
-                'penjualan_id' => 25,
-                'barang_id' => 11,
-                'penjualan_detail_harga_jual' => 15000,
-                'penjualan_detail_jumlah' => 3,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 45000
+                'detail_id' => 21,
+                'penjualan_id' => 1,
+                'barang_id' => 1,
+                'harga' => 3000,
+                'jumlah' => 4,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
-                'penjualan_detail_id' => 27,
-                'penjualan_id' => 26,
-                'barang_id' => 12,
-                'penjualan_detail_harga_jual' => 10000,
-                'penjualan_detail_jumlah' => 4,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 40000
+                'detail_id' => 22,
+                'penjualan_id' => 2,
+                'barang_id' => 2,
+                'harga' => 5000,
+                'jumlah' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
-                'penjualan_detail_id' => 28,
-                'penjualan_id' => 27,
-                'barang_id' => 13,
-                'penjualan_detail_harga_jual' => 11000,
-                'penjualan_detail_jumlah' => 3,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 33000
+                'detail_id' => 23,
+                'penjualan_id' => 3,
+                'barang_id' => 3,
+                'harga' => 7500,
+                'jumlah' => 2,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
-                'penjualan_detail_id' => 29,
-                'penjualan_id' => 28,
-                'barang_id' => 14,
-                'penjualan_detail_harga_jual' => 100000,
-                'penjualan_detail_jumlah' => 1,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 100000
+                'detail_id' => 24,
+                'penjualan_id' => 4,
+                'barang_id' => 4,
+                'harga' => 25000,
+                'jumlah' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
-                'penjualan_detail_id' => 30,
-                'penjualan_id' => 29,
-                'barang_id' => 15,
-                'penjualan_detail_harga_jual' => 12000,
-                'penjualan_detail_jumlah' => 2,
-                'penjualan_detail_diskon' => 0,
-                'penjualan_detail_subtotal' => 24000
+                'detail_id' => 25,
+                'penjualan_id' => 5,
+                'barang_id' => 5,
+                'harga' => 15000,
+                'jumlah' => 3,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
+            [
+                'detail_id' => 26,
+                'penjualan_id' => 6,
+                'barang_id' => 1,
+                'harga' => 3000,
+                'jumlah' => 2,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'detail_id' => 27,
+                'penjualan_id' => 7,
+                'barang_id' => 2,
+                'harga' => 5000,
+                'jumlah' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'detail_id' => 28,
+                'penjualan_id' => 8,
+                'barang_id' => 3,
+                'harga' => 7500,
+                'jumlah' => 2,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'detail_id' => 29,
+                'penjualan_id' => 9,
+                'barang_id' => 4,
+                'harga' => 25000,
+                'jumlah' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'detail_id' => 30,
+                'penjualan_id' => 10,
+                'barang_id' => 5,
+                'harga' => 15000,
+                'jumlah' => 2,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+
         ];
         DB::table('t_penjualan_detail')->insert($data);
     }
