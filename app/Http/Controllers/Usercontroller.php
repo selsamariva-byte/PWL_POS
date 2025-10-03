@@ -12,9 +12,13 @@ class UserController extends Controller
     public function index()
     {
         $data = [
-            'nama' => 'pelanggan 1',
+            'level_id' => 2,
+            'username' => 'manager_tiga',
+            'nama' => 'manager_3',
+            'pasword' => Hash::make('12345'),
         ];
-        UserModel::where('username', 'pelanggan1')->update($data);
+        UserModel::created($data);
+
         $user = UserModel::all();
         return view('user', ['data' => $user]);
     }
@@ -30,5 +34,9 @@ class UserController extends Controller
 //         ];
 //         //UserModel::insert($data);
 
+//         $user = UserModel::all();
+//         return view('user', ['data' => $user]);
+
+//  UserModel::where('username', 'pelanggan1')->update($data);
 //         $user = UserModel::all();
 //         return view('user', ['data' => $user]);
