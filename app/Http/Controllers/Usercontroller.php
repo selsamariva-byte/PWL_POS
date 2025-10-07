@@ -11,10 +11,21 @@ class UserController extends Controller
 {
     public function index()
     {
-        $jumlahUser = UserModel::count();
-        return view('user', ['jumlah' => $jumlahUser]);
+        $user = UserModel::firstOrNew(
+            [
+                'username' => 'manager33',
+                'nama' => 'Manajer tiga tiga',
+                'password' => Hash::make('1234'),
+                'level_id' => 2,
+            ],
+        );
+        $user->save();
+
+        return view('user', ['data' => $user]);
     }
 }    
+
+
         // $data = [
         //     'level_id' => 2,
         //     'username' => 'manager_tiga',
