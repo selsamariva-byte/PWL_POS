@@ -12,6 +12,8 @@
             <td>Username</td>
             <td>Nama</td>
             <td>ID Level Pengguna</td>
+            <td>model level</td>
+            <td>nama level</td>
             <td>Aksi</td>
         </tr>
         @foreach ($data as $d)
