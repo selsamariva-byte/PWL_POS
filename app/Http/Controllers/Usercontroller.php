@@ -11,64 +11,52 @@ class UserController extends Controller
 {
     public function index()
     {
+        $user = UserModel::all();
+        return view('user', ['data' => $user]);
+    }
+
+    public function tambah()
+    {
+        return view('user_tambah');
+    }
+
+    public function tambah_simpan(Request $request)
+    {
         $user = UserModel::create([
-            'username' => 'manager11',
-            'nama' => 'manajer11',
-            'password' => Hash::make('12345'),
-            'level_id' => 2,
+            'username' => $request->username,
+            'nama' => $request->nama,
+            'password' => Hash::make($request->password),
+            'level_id' => $request->level_id,
+
         ]);
-        $user->username = 'manager56';
+        return redirect('/user');
+    }
+
+    public function ubah($id)
+    {
+        $user = UserModel::find($id);
+        return view('user_ubah', ['' => $user]);
+    }
+
+    public function ubah_simpan($id, Request $request)
+    {
+        $user = UserModel::find($id);
+
+        $user->username = $request->username;
+        $user->nama = $request->nama;
+        $user->password = Hash::make('$request->password');
+        $user->level_id = $request->level_id;
 
         $user->save();
 
-        $user->wasChanged(); //true
-        $user->wasChanged('username'); //true
-        $user->wasChanged('nama'); //false
-        $user->wasChanged('nama', 'username'); //true
+        return redirect('/user');
+    }
 
+    public function hapus($id)
+    {
+        $user = UserModel::find($id);
+        $user->delete();
+
+        return redirect('/user');
     }
 }
-
-        // $user->isClean(); //false
-        // $user->isClean('username'); //true
-        // $user->isClean('nama'); //false
-        // $user->isClean('nama', 'username'); //false
-
-        // $user->save();
-
-        // $user->isDity(); //false
-        // $user->isClean(); //true
-        // dd($user->isDirty());
-   // }
-//}    
-
-
-        // $data = [
-        //     'level_id' => 2,
-        //     'username' => 'manager_tiga',
-        //     'nama' => 'manager_3',
-        //     'pasword' => Hash::make('12345'),
-        // ];
-        //
-
-        // $user = UserModel::all();
-        // return view('user', ['data' => $user]);
-    
-
-
-//UserModel::insert($data);
-// $data = [
-//             'username' => 'custumer-1',
-//             'nama' => 'pelanggan pertama ',
-//             'level_id' => 4,
-//             'password' => Hash::make('costomer1234'),
-//             'created_at' => now()
-//         ];
-//         //UserModel::insert($data);
-
-//         $user = UserModel::all();
-//         return view('user', ['data' => $user]);
-
-//  UserModel::where('username', 'pelanggan1')->update($data);
-//         $user = UserModel::all();
-//         return view('user', ['data' => $user]);
