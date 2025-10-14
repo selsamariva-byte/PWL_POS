@@ -3,13 +3,20 @@
 use App\Http\Controllers\kategoricontroller;
 use App\Http\Controllers\levelcontroller;
 use App\Http\Controllers\UserController;
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Route;;
+
+use App\Http\Controllers\WelcomeController;
+
+
 
 
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', [WelcomeController::class, 'index']);
+
 
 Route::get('/user/tambah', [UserController::class, 'tambah']);
 Route::post('/user/tamabah_simpan', [UserController::class, 'tambah_simpan']);
