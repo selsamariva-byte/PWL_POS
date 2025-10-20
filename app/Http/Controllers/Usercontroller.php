@@ -9,7 +9,10 @@ use Illuminate\Http\Request;
 use Illuminate\Database\QueryException;
 use Yajra\DataTables\Facades\DataTables;
 
+
 class UserController extends Controller
+
+//menampilkan halaman awal user
 {
     public function index()
     {
@@ -17,9 +20,8 @@ class UserController extends Controller
             'title' => 'Daftar User',
             'list' => ['Home', 'User']
         ];
-
         $page = (object)[
-            'title' => 'Daftar user yang terdaftar dalam sistem'
+            'title' => 'daftar user yang terdaftar salam sistem '
         ];
 
         $activeMenu = 'user';
@@ -34,12 +36,13 @@ class UserController extends Controller
         ]);
     }
 
+    //ambil data user dalam bentuk json untuk database
     public function list(Request $request)
     {
         $users = UserModel::with('level')->select('user_id', 'username', 'nama', 'level_id');
 
         //Fiter data user berdasarkan level_id
-        if ($request->filled('level_id')) {
+        if ($request->level_id) {
             $users->where('level_id', $request->level_id);
         }
 
