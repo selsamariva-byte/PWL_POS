@@ -4,26 +4,34 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\LevelModel; // ✅ tambahkan baris ini
 
 class LevelController extends Controller
 {
     public function index()
     {
-        // DB::insert('INSERT INTO m_level (level_kode, level_nama, 
-        // created_at) VALUES (?, ?, ?)', ['CUS', 'Pelanggan', now()]);
-        // return "insert data baru berhasil";
+        $breadcrumb = (object)[
+            'title' => 'Daftar Level',
+            'list'  => ['Home', 'Level User']
+        ];
 
-        // $row = DB::update('UPDATE m_level SET level_nama = ? WHERE level_kode = ?', ['Customer','CUS']);
-        // return 'Update data berhasil. Jumlah data yang diupdate: '.$row.' baris';
+        $page = (object)[
+            'title' => 'Daftar level pengguna sistem'
+        ];
 
-        // $row = DB::delete('DELETE FROM m_level WHERE level_kode = ?', ['CUS']);
-        // return 'Delete data berhasil. Jumlah data yang dihapus: '.$row.' baris';
-        // $data = DB::select('SELECT * FROM m_level');
-        // return view('level', ['data' => $data]);
+        $activeMenu = 'level'; // set menu aktif
+        return view('level.index', compact('breadcrumb', 'page', 'activeMenu'));
+    }
 
-        // $row = DB::delate('Delate from m_level where level_kode = ?', ['CUS']);
-        // return 'delate data berhasil.jumlah data yang dihapus:' . $row . 'baris';
-
-
+    public function list(Request $request)
+    {
+        $data = LevelModel::select(['level_id', 'level_kode', 'level_nama']);
+        return datatables()->of($data)
+            ->addIndexColumn()
+            ->addColumn('aksi', function ($level) {
+                return '<a href="' . url('level/' . $level->level_id . '/edit') . '" class="btn btn-sm btn-warning">Edit</a>';
+            })
+            ->rawColumns(['aksi'])
+            ->make(true);
     }
 }
